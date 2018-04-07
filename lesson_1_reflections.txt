@@ -1,0 +1,54 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Viewing a diff between two versions exactly pointed out what was changed in
+    the new version with respect to old version , and then it was easier to
+    identify where the typo occurred in the new version.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Having access to the entire history let me troubleshoot any bugs occurred
+    due to unintentional change . While performing regression testing if the
+    piece of code that was untouched behaves weirdly , then historical versions
+    of file help me in pin pointing any accidental modifications occurred.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    There is always a risk of forgetting manual commits and loosing intermediate
+    changes while automatic commits will periodically create the checkpoints at
+    definite intervals.Manual commits can be created at a logical point making
+    it clear for the users to distinguish between various versions while
+    automatically saving versions might not be having significant difference and
+    might be overhead.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git is mainly used for version control of source code .Since source code can
+    span across multiple files , it is important to save multiple files in one
+    commit so that the dependent files are in sync.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log shows the complete history of changes made in each of the files in
+    the repository . With the help of git log , identify the commit id relevant
+    to our search (logical change made in which we are interested) . Note down
+    commit id just before this one and use git diff first_commit_id second_comm
+    it_id to get the exact details.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    git checkout feature enables to go back to previous versions of the code,
+    hence in case we accidentally break something code can be reverted back to
+    the previous working version.Using git version control let the programmer
+    explore new features in terms of code design and architecture changes,without
+    loosing the working copy.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I want to use Git for mantaining code versions for various machine learning
+    projects.
