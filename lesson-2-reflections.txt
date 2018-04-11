@@ -20,13 +20,45 @@ together with proper commit message.
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+We can add only those files to the staging area using git add command, which are
+part of a specific logical change for e.g. files modified for a bug fix can be
+added to staging area first and committed to repository while other set of files
+created or modified for a new feature can be added separately .
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Branches are basically labeled commits , having proper English descriptions.
+Branches are helpful in keeping the production ready version intact and easy to
+access while we are working on some experimental features or trying additional
+changes based on new architecture/design which are not yet official. It helps in
+switching from one copy of code to other without really checking commit ids which
+is a sequence of alphanumeric characters. Also , branching let us make and track
+changes for a particular need without really worrying changes happening on the
+master branch(official prod ready) and then merge it later.
+
+Branch enables context switching , there would be production quality branch with
+the working code as desired and then there could be branches for development,QA,
+other features etc.
+
 How do the diagrams help you visualize the branch structure?
+
+Branch structure shows the parent commit at which new branch was created. It
+clarifies the reachability within the branches i.e. what all commits can be
+accessed being in a specific branch and what all commits cannot be reached.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+git merge command merges currently checked out branch with the branch specified
+in the command . After merge , when git commit is run , it creates a new commit
+for the checked out branch.All the commits from merged branch are interleaved
+with the commits of checked out branch based on the timestamp.
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Manual merge is useful in resolving the conflicts when the same section or piece
+of code is modified within different branches.It needs verifying and adjusting
+the content based on the knowledge of the functionality which automatic merging
+would be lacking.
