@@ -3,4 +3,11 @@ work local?
 
 Remote repository is needed when we need to share and collaborate with other
 folks/team members/community members. We would need to provide our changes as
-well as access changes made by others. 
+well as access changes made by others.
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+Not every change in the remote github repository would be relevant for us.
+We would need to understand based on commits , hence manual pull would help us
+in making changes on the local repository unknowingly. 
